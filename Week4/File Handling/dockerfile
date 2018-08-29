@@ -1,0 +1,5 @@
+FROM openjdk:8
+WORKDIR .
+COPY FileHandling.jar FileHandling.jar
+#CMD ['run','install','java']
+#CMD ['java','-jar','FileHandling.jar']

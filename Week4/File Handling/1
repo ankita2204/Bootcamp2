@@ -1,0 +1,6 @@
+FROM ubuntu
+WORKDIR .
+COPY FileHandling.jar FileHandling.jar
+CMD ['apt-get','update','&&','apt-get','upgrade']
+#CMD ['apt-get','install','default-jdk']
+#CMD ['java','-jar','FileHandling.jar']
