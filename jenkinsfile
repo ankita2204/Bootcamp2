@@ -4,8 +4,11 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
+            dir('Week4/File Handling') {
+    // some block
                 sh 'javac FileHandling.java'
                 sh 'jar cvfm FileHandling.jar manifest.mft *.class'
+               }
             }
         }
     }
